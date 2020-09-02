@@ -1,0 +1,72 @@
+.searchResult {
+    display: flex;
+    position: relative;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    border-bottom: 1px solid lightgray;
+    opacity: 1;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    & > img {
+        height: 12.5rem;
+        width: 21.875rem;
+        border-radius: .625rem;
+        overflow: hidden;
+    }
+
+    &__heart {
+        position: absolute;
+        top: 1.25rem;
+        right: 2.5rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 1.25rem;
+    }
+
+    &__infoTop {
+        width: 40vw;
+
+        & > h3 {
+            font-weight: 300;
+            margin-top: .625rem;
+        }
+
+        & > p {
+            margin-top: .625rem;
+            font-size: .8125rem;
+            color: gray;
+        }
+    }
+
+    &__infoBottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__stars {
+        display: flex;
+        align-items: center;
+    }
+
+    &__star {
+        color: red;
+    }
+
+    &__price {
+        position: absolute;
+        bottom: 1.25rem;
+        right: 1.875rem;
+
+        & > p {
+            text-align: right;
+        }
+    }
+}
